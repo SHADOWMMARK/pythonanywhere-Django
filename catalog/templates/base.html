@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Beautiful Page{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Other head elements -->
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Welcome to My Beautiful Page{% endblock %}</h1>
+    </header>
+    <nav>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <main>
+            {% block content %}
+            <h2>Main Content</h2>
+            <p>This is a simple HTML template with basic styling to create a clear but beautiful webpage. You can replace this text with your own content.</p>
+            {% endblock %}
+        </main>
+    </div>
+    <footer>
+        <p>Footer Content &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'catalog/base.html' %}
+
+{% load static %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block header %}Gallery{% endblock %}
+
+{% block content %}
+<h2>Gallery</h2>
+<div class="gallery-container">
+    <!-- Example static images, replace with your dynamic content as needed -->
+    <img src="{% static 'images/image1.jpg' %}" alt="Photo 1">
+    <img src="{% static 'images/image2.jpg' %}" alt="Photo 2">
+    <img src="{% static 'images/image3.jpg' %}" alt="Photo 3">
+    <!-- Add more images as needed -->
+</div>
+{% endblock %}

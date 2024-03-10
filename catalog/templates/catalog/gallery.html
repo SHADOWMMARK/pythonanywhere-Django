@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% block title %}Gallery{% endblock %}
+
+{% block header %}Gallery{% endblock %}
+
+{% block content %}
+<h2>Gallery</h2>
+<div class="gallery-container">
+    <!-- Example static images, replace with your dynamic content as needed -->
+    <img src="{% static 'images/image1.webp' %}" alt="Photo 1">
+    <img src="{% static 'images/image2.webp' %}" alt="Photo 2">
+    <img src="{% static 'images/image3.webp' %}" alt="Photo 3">
+    <!-- Add more images as needed -->
+</div>
+{% endblock %}
