@@ -60,3 +60,17 @@ footer {
     transform: scale(1.05);
     border-color: #007bff;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s; /* lasting time */
+    animation-fill-mode: forwards; /* keep the ani still */
+}
