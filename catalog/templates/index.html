@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Page</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
 </head>
 <body>
     <header>
@@ -16,6 +17,7 @@
         <a href="#">Services</a>
         <a href="#">Contact</a>
     </nav>
+
     <div class="container">
         <main>
             <h2>Main Content</h2>
@@ -25,8 +27,14 @@
             </p>
         </main>
     </div>
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{% static 'js/particles.js' %}"></script>
     <footer>
         <p>ShadowmMark &copy; 2024</p>
     </footer>
+
 </body>
 </html>
