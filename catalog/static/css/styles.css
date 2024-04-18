@@ -5,7 +5,8 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background-color: #578588;
+    /* background-color: #578588; */
+    background-image: url('../images/Purdue\'s\ Spring.jpg');
     color: #ffffff;
     padding: 20px;
     text-align: center;
